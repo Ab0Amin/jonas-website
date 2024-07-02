@@ -10,10 +10,12 @@ export default function Appointment() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: { name: "ahmed" },
+      //   body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        alert("done");
+        alert(formData.toString());
+        console.log({ ...formData });
       })
       .catch((error) => alert(error));
   };
