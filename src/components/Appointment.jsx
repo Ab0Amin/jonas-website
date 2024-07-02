@@ -14,8 +14,8 @@ export default function Appointment() {
       //   body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        alert(formData.toString());
-        console.log({ ...formData });
+        // alert(formData.toString());
+        // console.log({ ...formData });
       })
       .catch((error) => alert(error));
   };
@@ -38,8 +38,9 @@ export default function Appointment() {
               name="appointment-form"
               role="form"
               method="post"
-              //   onSubmit={handleSubmit}
+              onSubmit={handleSubmit}
               netlify
+              data-netlify="true"
             >
               {/* <!-- SECTION TITLE --> */}
               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
