@@ -22,6 +22,8 @@ export default function Appointment() {
               //   netlify
               data-netlify="true"
             >
+              <input type="hidden" name="form-name" value="appointment-form" />
+
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
               </div>
@@ -91,7 +93,6 @@ export default function Appointment() {
                   </button>
                 </div>
               </div>
-              <input type="hidden" name="form-name" value="appointment-form" />
             </form>
             <form name="contact" netlify method="POST">
               <p>
