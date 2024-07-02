@@ -19,8 +19,8 @@ export default function Appointment() {
               name="appointment-form"
               //   role="form"
               //   method="post"
-              netlify
-              //   data-netlify="true"
+              //   netlify
+              data-netlify="true"
             >
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
