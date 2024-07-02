@@ -1,88 +1,62 @@
 import React from "react";
 
 export default function Appointment() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: { name: "ahmed" },
-      //   body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        // alert(formData.toString());
-        // console.log({ ...formData });
-      })
-      .catch((error) => alert(error));
-  };
   return (
     <section id="appointment" data-stellar-background-ratio="3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-sm-6">
             <img
               src="images/appointment-image.jpg"
-              class="img-responsive"
+              className="img-responsive"
               alt=""
             />
           </div>
 
-          <div class="col-md-6 col-sm-6">
-            {/* <!-- CONTACT FORM HERE --> */}
+          <div className="col-md-6 col-sm-6">
             <form
               id="appointment-form"
               name="appointment-form"
               role="form"
               method="post"
-              onSubmit={handleSubmit}
               netlify
               data-netlify="true"
             >
-              {/* <!-- SECTION TITLE --> */}
-              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+              <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
               </div>
 
-              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                <div class="col-md-6 col-sm-6">
-                  <label for="name">Name</label>
+              <div className="wow fadeInUp" data-wow-delay="0.8s">
+                <div className="col-md-6 col-sm-6">
+                  <label htmlFor="name">Name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     id="name"
                     name="name"
                     placeholder="Full Name"
                   />
                 </div>
 
-                <div class="col-md-6 col-sm-6">
-                  <label for="email">Email</label>
+                <div className="col-md-6 col-sm-6">
+                  <label htmlFor="email">Email</label>
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id="email"
                     name="email"
                     placeholder="Your Email"
                   />
                 </div>
 
-                <div class="col-md-6 col-sm-6">
-                  <label for="date">Select Date</label>
-                  <input
-                    type="date"
-                    name="date"
-                    value=""
-                    class="form-control"
-                  />
+                <div className="col-md-6 col-sm-6">
+                  <label htmlFor="date">Select Date</label>
+                  <input type="date" name="date" className="form-control" />
                 </div>
 
-                <div class="col-md-6 col-sm-6">
-                  <label for="select">Select Department</label>
-                  <select class="form-control">
+                <div className="col-md-6 col-sm-6">
+                  <label htmlFor="select">Select Department</label>
+                  <select name="department" className="form-control">
                     <option>General Health</option>
                     <option>Cardiology</option>
                     <option>Dental</option>
@@ -90,18 +64,18 @@ export default function Appointment() {
                   </select>
                 </div>
 
-                <div class="col-md-12 col-sm-12">
-                  <label for="telephone">Phone Number</label>
+                <div className="col-md-12 col-sm-12">
+                  <label htmlFor="phone">Phone Number</label>
                   <input
                     type="tel"
-                    class="form-control"
+                    className="form-control"
                     id="phone"
                     name="phone"
                     placeholder="Phone"
                   />
-                  <label for="Message">Additional Message</label>
+                  <label htmlFor="message">Additional Message</label>
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     rows="5"
                     id="message"
                     name="message"
@@ -109,7 +83,7 @@ export default function Appointment() {
                   ></textarea>
                   <button
                     type="submit"
-                    class="form-control"
+                    className="form-control"
                     id="cf-submit"
                     name="submit"
                   >
