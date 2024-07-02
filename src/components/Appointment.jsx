@@ -15,12 +15,12 @@ export default function Appointment() {
 
           <div className="col-md-6 col-sm-6">
             <form
-              id="appointment-form"
+              //   id="appointment-form"
               name="appointment-form"
-              role="form"
-              method="post"
+              //   role="form"
+              //   method="post"
               netlify
-              data-netlify="true"
+              //   data-netlify="true"
             >
               <div className="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
