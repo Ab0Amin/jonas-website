@@ -12,7 +12,9 @@ export default function Appointment() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/thank-you/"))
+      .then(() => {
+        alert("done");
+      })
       .catch((error) => alert(error));
   };
   return (
