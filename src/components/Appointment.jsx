@@ -1,6 +1,20 @@
 import React from "react";
 
 export default function Appointment() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
   return (
     <section id="appointment" data-stellar-background-ratio="3">
       <div class="container">
@@ -15,7 +29,15 @@ export default function Appointment() {
 
           <div class="col-md-6 col-sm-6">
             {/* <!-- CONTACT FORM HERE --> */}
-            <form id="appointment-form" role="form" method="post" action="#">
+            <form
+              id="appointment-form"
+              name="appointment-form"
+              role="form"
+              method="post"
+              action="#"
+              onSubmit={handleSubmit}
+              netlify
+            >
               {/* <!-- SECTION TITLE --> */}
               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                 <h2>Make an appointment</h2>
@@ -91,6 +113,11 @@ export default function Appointment() {
                   </button>
                 </div>
               </div>
+              <input
+                type="hidden"
+                name="appointment-form-input"
+                value="appointment-form"
+              />
             </form>
           </div>
         </div>
