@@ -18,7 +18,7 @@ export default function Appointment() {
               //   id="appointment-form"
               name="appointment-form"
               //   role="form"
-              //   method="post"
+              method="post"
               //   netlify
               data-netlify="true"
             >
@@ -93,7 +93,7 @@ export default function Appointment() {
               </div>
               <input type="hidden" name="form-name" value="appointment-form" />
             </form>
-            <form name="contact" netlify>
+            <form name="contact" netlify method="POST">
               <p>
                 <label>
                   Name <input type="text" name="name" />
