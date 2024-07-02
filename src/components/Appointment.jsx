@@ -38,8 +38,7 @@ export default function Appointment() {
               name="appointment-form"
               role="form"
               method="post"
-              action="#"
-              onSubmit={handleSubmit}
+              //   onSubmit={handleSubmit}
               netlify
             >
               {/* <!-- SECTION TITLE --> */}
@@ -117,11 +116,7 @@ export default function Appointment() {
                   </button>
                 </div>
               </div>
-              <input
-                type="hidden"
-                name="appointment-form-input"
-                value="appointment-form"
-              />
+              <input type="hidden" name="form-name" value="appointment-form" />
             </form>
           </div>
         </div>
