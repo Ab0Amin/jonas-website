@@ -16,7 +16,7 @@ import "../assets/css/owl.theme.default.min.css";
 import "../assets/css/tooplate-style.css";
 // import ImportScript from "../hooks/ImportScript";?
 
-export default function Home() {
+export default function Home({ setLanguageState, languageState }) {
   // ImportScript("../js/script.js");
 
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       <Header />
 
       {/* <!-- MENU --> */}
-      <Menu></Menu>
+      <Menu setLanguageState={setLanguageState} />
 
       {/* <!-- HOME --> */}
       <Hero></Hero>

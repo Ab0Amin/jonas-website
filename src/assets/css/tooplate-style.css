@@ -477,6 +477,8 @@ header span i {
 
 #about {
   background: url("../../../public/images/about-bg.jpg") no-repeat top center;
+  border: red solid 1px;
+
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;

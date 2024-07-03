@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+.selLang {
+  /* background-color: transparent; */
+  color: black;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 4px 12px;
+  position: absolute;
+  background-color: whitesmoke;
+  top: 0;
+  transform: translate(0, 95%);
+  border-radius: 8px;
+  text-decoration-style: unset;
+  list-style: unset;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  box-shadow: white 0 0 5px 5px;
+}
+.language-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.lan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.red-border {
+  border: red solid 1px;
+}

@@ -8,7 +8,7 @@ export default function Appointment() {
           <div className="col-md-6 col-sm-6">
             <img
               src="images/appointment-image.jpg"
-              className="img-responsive"
+              className="img-responsive red-border"
               alt=""
             />
           </div>
@@ -51,21 +51,6 @@ export default function Appointment() {
                   />
                 </div>
 
-                <div className="col-md-6 col-sm-6">
-                  <label htmlFor="date">Select Date</label>
-                  <input type="date" name="date" className="form-control" />
-                </div>
-
-                <div className="col-md-6 col-sm-6">
-                  <label htmlFor="select">Select Department</label>
-                  <select name="department" className="form-control">
-                    <option>General Health</option>
-                    <option>Cardiology</option>
-                    <option>Dental</option>
-                    <option>Medical Research</option>
-                  </select>
-                </div>
-
                 <div className="col-md-12 col-sm-12">
                   <label htmlFor="phone">Phone Number</label>
                   <input
@@ -93,21 +78,6 @@ export default function Appointment() {
                   </button>
                 </div>
               </div>
-            </form>
-            <form name="contact" netlify method="POST">
-              <p>
-                <label>
-                  Name <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Email <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
             </form>
           </div>
         </div>

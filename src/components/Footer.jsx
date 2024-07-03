@@ -49,24 +49,6 @@ export default function Footer() {
                   <span>March 08, 2018</span>
                 </div>
               </div>
-
-              <div class="latest-stories">
-                <div class="stories-image">
-                  <a href="#">
-                    <img
-                      src="images/news-image.jpg"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="stories-info">
-                  <a href="#">
-                    <h5>New Healing Process</h5>
-                  </a>
-                  <span>February 20, 2018</span>
-                </div>
-              </div>
             </div>
           </div>
 
